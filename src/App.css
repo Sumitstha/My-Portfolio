@@ -51,6 +51,11 @@ p {
 }
 p{
   color:var(--para-color);
+  
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
 }
 
 /* Heading 1 */
@@ -66,13 +71,18 @@ h2 {
   line-height: 58px;
 }
 h3 {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 700;
   line-height: 58px;
 }
 h4{
   font-size: 24px;
   font-weight: 700;
+  line-height: 34px;
+}
+h5{
+  font-size: 18px;
+  font-weight: 600;
   line-height: 34px;
 }
 
@@ -89,7 +99,7 @@ h4{
 } */
 
 
-.about-center-text{
+.all-center-text{
   text-align: center;
 }
 .my-title{
@@ -121,9 +131,9 @@ section {
 
 .hero--section{
   margin-top: 86px;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
- display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ /* display: flex; */
  flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -146,7 +156,27 @@ section {
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 70px;
-}}
+}
+section {
+  padding: 42px 24px;
+}
+.card-outer {
+  display: flex !important;
+  row-gap: 32px !important;
+}
+.card{
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.3) !important;
+}
+.about-me-box {
+  display: flex !important;
+  row-gap: 32px !important;
+  text-align: center !important;
+}
+
+}
+
+
+
 .shape-img {
   align-items: center;
   display: flex;
@@ -193,7 +223,7 @@ section {
   /* background-color: burlywood; */
   padding: 15px 85.333px;
   background: var(--second-bg-color);
-  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 55px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -208,15 +238,16 @@ section {
   text-decoration: none;
  }
  
- .navbar--items ul li a {
+ .navbar-items ul li a {
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 
 .navbar--content {
   color: var(--text-color);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   cursor: pointer;
   margin:0px 6px;
@@ -230,9 +261,9 @@ section {
 /* SKILLS STARTS */
 
 .card-outer{
-  /* display: grid;
-  grid-template-columns: repeat(3,1fr); */
-  display:flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* display:flex; */
   flex-direction: column;
   flex-wrap: wrap;
  column-gap: 40px;
@@ -264,9 +295,9 @@ section {
   background: var(--bg-color);
 }
 .about-me-box{
-  /* display: grid;
-    grid-template-columns: repeat(2,1fr); */
-    display: flex;
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* display: flex; */
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
@@ -282,4 +313,15 @@ section {
   width: 90%;
 
 }
+.p-about-me{
+  display: flex !important;
+    align-items: center !important;
+}
 /* ABOUT ME ENDS */
+
+/* contacct me starts */
+
+.logo-contact{
+  font-size: 600;
+}
+/* contact me ends */
